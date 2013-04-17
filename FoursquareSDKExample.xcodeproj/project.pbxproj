@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		714CF6F5908945F0AD9BD083 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAC1F95FDDB4EC19CC4E935 /* libPods.a */; };
 		AA840068171DED81009D86D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA840067171DED81009D86D1 /* UIKit.framework */; };
 		AA84006A171DED81009D86D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA840069171DED81009D86D1 /* Foundation.framework */; };
 		AA84006C171DED81009D86D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA84006B171DED81009D86D1 /* CoreGraphics.framework */; };
@@ -16,9 +17,11 @@
 		AA84007A171DED81009D86D1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AA840079171DED81009D86D1 /* Default.png */; };
 		AA84007C171DED81009D86D1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA84007B171DED81009D86D1 /* Default@2x.png */; };
 		AA84007E171DED81009D86D1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA84007D171DED81009D86D1 /* Default-568h@2x.png */; };
+		AA840086171DEDED009D86D1 /* FoursquareSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = AA840085171DEDED009D86D1 /* FoursquareSDK.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FAC1F95FDDB4EC19CC4E935 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA840064171DED81009D86D1 /* FoursquareSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoursquareSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA840067171DED81009D86D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AA840069171DED81009D86D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +35,9 @@
 		AA840079171DED81009D86D1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		AA84007B171DED81009D86D1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		AA84007D171DED81009D86D1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AA840084171DEDED009D86D1 /* FoursquareSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareSDK.h; sourceTree = "<group>"; };
+		AA840085171DEDED009D86D1 /* FoursquareSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareSDK.m; sourceTree = "<group>"; };
+		ADC7D0FAE8D7407A8CBE46E7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,7 @@
 				AA840068171DED81009D86D1 /* UIKit.framework in Frameworks */,
 				AA84006A171DED81009D86D1 /* Foundation.framework in Frameworks */,
 				AA84006C171DED81009D86D1 /* CoreGraphics.framework in Frameworks */,
+				714CF6F5908945F0AD9BD083 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +61,7 @@
 				AA84006D171DED81009D86D1 /* FoursquareSDKExample */,
 				AA840066171DED81009D86D1 /* Frameworks */,
 				AA840065171DED81009D86D1 /* Products */,
+				ADC7D0FAE8D7407A8CBE46E7 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +79,7 @@
 				AA840067171DED81009D86D1 /* UIKit.framework */,
 				AA840069171DED81009D86D1 /* Foundation.framework */,
 				AA84006B171DED81009D86D1 /* CoreGraphics.framework */,
+				1FAC1F95FDDB4EC19CC4E935 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,6 +89,8 @@
 			children = (
 				AA840076171DED81009D86D1 /* FoursquareAppDelegate.h */,
 				AA840077171DED81009D86D1 /* FoursquareAppDelegate.m */,
+				AA840084171DEDED009D86D1 /* FoursquareSDK.h */,
+				AA840085171DEDED009D86D1 /* FoursquareSDK.m */,
 				AA84006E171DED81009D86D1 /* Supporting Files */,
 			);
 			path = FoursquareSDKExample;
@@ -109,6 +120,7 @@
 				AA840060171DED81009D86D1 /* Sources */,
 				AA840061171DED81009D86D1 /* Frameworks */,
 				AA840062171DED81009D86D1 /* Resources */,
+				94EDE94C442942E1951F812A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +172,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		94EDE94C442942E1951F812A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AA840060171DED81009D86D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -167,6 +196,7 @@
 			files = (
 				AA840074171DED81009D86D1 /* main.m in Sources */,
 				AA840078171DED81009D86D1 /* FoursquareAppDelegate.m in Sources */,
+				AA840086171DEDED009D86D1 /* FoursquareSDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +272,7 @@
 		};
 		AA840082171DED81009D86D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC7D0FAE8D7407A8CBE46E7 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoursquareSDKExample/FoursquareSDKExample-Prefix.pch";
@@ -253,6 +284,7 @@
 		};
 		AA840083171DED81009D86D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC7D0FAE8D7407A8CBE46E7 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoursquareSDKExample/FoursquareSDKExample-Prefix.pch";
@@ -281,6 +313,7 @@
 				AA840083171DED81009D86D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
